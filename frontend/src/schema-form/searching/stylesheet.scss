@@ -1,0 +1,33 @@
+@import "../../configs/css-configuration.scss";
+
+.ui-search-form-panel {
+  .ui-search-form {
+    background: #ffffff;
+    padding: 20px 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+
+  .ui-search-result {
+    border-radius: 6px;
+    background: #ffffff;
+    padding: 20px 10px;
+  }
+
+  .ui-flat-icon-panel {
+    i {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 22px;
+
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.ui-aster-service {
+  .ui-aster-service-top {
+    //background-color: #0a93f3;
+    //height: 10px;
+  }
+
+  .ui-aster-service-content {
+    background-color: #0a93f3;
+    min-height: 200px;
+  }
+
+  .ui-service-detail {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+
+    .service-item {
+      flex-grow: 1;
+      max-width: 33%;
+      padding: 0 30px;
+      text-align: center;
+      justify-content: center;
+
+      .icon-panel {
+        transform: translateY(-56px);
+      }
+
+      .service-item-content {
+        color: #ffffff;
+        transform: translateY(-50px);
+
+        .title {
+          font-size: 30px;
+          font-weight: 300;
+          margin-bottom: 15px;
+          font-weight: 300;
+          margin-top: 8px;
+        }
+
+        p.desc {
+          justify-content: center;
+          text-align: justify;
+          font-size: 16px;
+          color: #ffffff;
+          opacity: 0.8;
+          font-weight: 300;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        ul.service-outline {
+          list-style: none;
+          text-align: left;
+          padding: 0;
+          margin: 0 auto 0 20px;
+          line-height: 30px;
+
+          li {
+            span {
+              display: inline-block;
+              margin-left: 20px;
+              font-size: 16px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ui-title-panel {
+    height: 180px;
+    background-color: #f2f3f3;
+
+
+    h3 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 36px 0 0px 0;
+      font-size: 37px;
+      color: #0a93f3;
+      font-weight: bold;
+    }
+  }
+
+  .consulting {
+    img {
+      max-width: 80px !important;
+      max-height: 80px !important;
+      transform: translateY(4px);
+    }
+  }
+
+}

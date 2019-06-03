@@ -1,0 +1,69 @@
+@import "../../configs/css-configuration.scss";
+
+$theme-font-family: 'Open Sans', "intercom-font", "ui-header-adminHelvetica Neue", Helvetica, Arial, sans-serif;
+
+.ui-aster-layout {
+
+  background: #ffffff !important;
+
+  .ui-aster-body {
+    img {
+      max-width: 100% !important;
+    }
+  }
+
+  .ui-page-content {
+    min-height: 200px;
+  }
+
+  .ant-layout-header, .ant-layout-footer {
+    background: transparent !important;
+    padding: 0;
+  }
+
+  .ui-aster-header {
+    height: auto !important;
+  }
+
+  .ui-aster-home-item {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+    a {
+      color: #a1b1bc;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .ui-left {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    .ui-right {
+      border-right: 1px solid #26303e;
+      display: flex;
+
+      .ui-item {
+        &:first-child {
+          border: none;
+        }
+      }
+    }
+
+    .ui-item {
+      border-left: 1px solid #26303e;
+      line-height: 24px;
+      padding: 12px 24px;
+
+      span {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+}

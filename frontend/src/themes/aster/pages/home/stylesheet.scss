@@ -1,0 +1,93 @@
+
+.ui-home-page {
+  @media only screen and (max-width: 900px) {
+    h1.title {
+      font-size: 26px !important;
+    }
+
+    ul.outline {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+      .ui-home-banner {
+        .ui-image-background {
+          max-height: 400px !important;
+        }
+
+        .text-panel {
+          max-height: 400px !important;
+        }
+      }
+  }
+  .ui-home-banner {
+    position: relative;
+    border-bottom: 8px solid #e29d00;
+
+    .ui-aster-menu {
+      //position: absolute;
+      //width: 100%;
+      //padding: 0 20px;
+      ul li {
+        color: white;
+        opacity: 0.9;
+        font-weight: 300;
+        font-size: 15px;
+
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .home-ads {
+      max-width: 1200px;
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+
+      ul.outline {
+        list-style: none;
+        margin: 5px 0 0 35px;
+        line-height: 35px;
+        li {
+          font-size: 18px;
+          color: white;
+          opacity: 0.9;
+          cursor: pointer;
+          position: relative;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            border-right: 2px solid white;
+            border-bottom: 2px solid white;
+            width: 10px;
+            height: 10px;
+            top: calc(18px);
+            left: -28px;
+            transform: translateY(-50%) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    h1.title {
+      margin: 90px 0 0 0;
+      width: 100%;
+      font-size: 60px;
+      padding: 0 20px;
+      font-weight: 300;
+      color: white;
+
+    }
+  }
+
+}

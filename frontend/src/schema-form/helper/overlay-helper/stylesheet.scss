@@ -1,0 +1,115 @@
+@import "../../../configs/css-configuration.scss";
+
+
+.ui-drawer-top, .ui-drawer-bottom {
+  .ant-drawer-content-wrapper {
+    height: auto !important;
+    background: #ffffff;
+    height: calc(100% - 50px) !important;
+    overflow-y: scroll;
+
+    .ant-drawer-content {
+      width: auto !important;
+      height: auto !important;
+      //background: $main-content-bg-color;
+    }
+
+    .ant-drawer-body {
+      //box-shadow: 0px 5px 5px #cccccc;
+      background: #ffffff;
+      padding: 0 !important;
+    }
+
+    .ui-custom-drawer-body {
+      //max-width: 1336px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .ant-drawer-header {
+      background: rgb(243, 243, 243);
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+      background: linear-gradient(152deg, rgba(243, 243, 243, 1) 0%, rgba(242, 244, 244, 1) 100%);
+
+      .ant-menu {
+        background: transparent !important;
+        border-bottom: none;
+      }
+
+      .ant-menu-horizontal {
+        .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
+          font-weight: normal !important;
+        }
+      }
+
+      .ant-drawer-close {
+        top: -5px;
+      }
+
+      .ui-header-popup-screen {
+        display: flex;
+
+        .ui-title {
+          flex-grow: 1;
+          min-width: 150px;
+          line-height: 46px;
+        }
+
+        .ui-popup-screen-menu {
+          max-width: calc(100% - 200px) !important;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+.ui-drawer-left, .ui-drawer-right {
+  .ant-drawer-content-wrapper {
+    height: auto !important;
+    background: #ffffff;
+    height: calc(100% - 50px) !important;
+    overflow-y: scroll;
+
+    .ant-drawer-content {
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+
+}
+
+.ui-drawer-panel {
+  .ui-drawer-title {
+    display: flex;
+
+    .ui-text {
+      flex-grow: 1;
+    }
+  }
+}
+
+.ui-new-panel {
+
+  .ui-button {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+    right: 20px;
+    padding: 8px;
+    box-shadow: 0 1px 5px #cccccc;
+    border-radius: 50%;
+    background: white;
+
+    .new-icon {
+      font-size: 35px;
+      cursor: pointer;
+
+      color: $primary-color;
+
+    }
+  }
+
+}

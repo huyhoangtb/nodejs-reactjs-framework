@@ -1,0 +1,44 @@
+@media only screen and (max-width: 900px) {
+  .ui-aster-menu {
+    display: none !important;
+  }
+}
+
+.ui-aster-menu {
+  //height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+
+  .ui-menu-panel {
+    display: flex;
+    align-items: center;
+  }
+
+  .ui-aster-menu-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
+    .top-banner {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+
+      .ui-logo {
+        flex-grow: 1;
+
+        img {
+          height: 100px;
+        }
+      }
+
+      .ant-menu-horizontal {
+        border: none;
+        color: #ffffff;
+      }
+    }
+
+  }
+
+}

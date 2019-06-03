@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .ui-aster-footer {
+    .ui-right {
+      display: none !important;
+    }
+  }
+}
+
+.ui-aster-footer {
+  padding: 0 20px;
+  background: #1a1c27;
+  color: #a1b1bc;
+  border-top: 1px solid #ffffff;
+
+  .ui-aster-footer-content {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 30px 0;
+
+    .ui-item, .ui-right {
+      border: none !important;
+    }
+  }
+}

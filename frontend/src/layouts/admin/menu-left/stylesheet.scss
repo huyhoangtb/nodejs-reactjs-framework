@@ -1,0 +1,59 @@
+@import "../../../configs/css-configuration.scss";
+
+$color: #ffffff;
+.ui-admin-left-menu-panel {
+  &.ant-layout-sider {
+    background: $main-menu-color !important;
+    border-right: 1px dotted #ccc;
+  }
+  .ant-menu-inline {
+
+  }
+  .ant-menu-sub.ant-menu-inline {
+    background-color: $main-menu-color !important;
+  }
+  .ant-menu-item-selected, .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: $main-menu-color !important;
+    color: #1890ff;
+  }
+  //.ant-menu-sub.ant-menu-inline > .ant-menu-item {
+  //  background-color: $left-$main-menu-color-color !important;
+  //  color: $color;
+  //
+  //  &:hover {
+  //    opacity: 0.9;
+  //    background-color: #393e42 !important;
+  //  }
+  //}
+
+  .ant-menu-item:active, .ant-menu-submenu-title:active {
+    //background-color: #181a1c !important;
+    color: #ffffff;
+    font-weight: bold;
+
+    .ant-menu-submenu-arrow {
+      &:before {
+        background-image: linear-gradient(to right, rgba(254, 254, 254, 0.9), rgba(254, 254, 254, 0.9));
+      }
+      &:after {
+        background-image: linear-gradient(to right, rgba(254, 254, 254, 0.9), rgba(254, 254, 254, 0.9));
+      }
+    }
+  }
+
+  .ui-admin-left-menu {
+    background: $main-menu-color;
+    border: none;
+    color: $color;
+    opacity: 0.8;
+
+    .ant-menu-submenu-arrow {
+      &:before {
+        background-image: linear-gradient(to right, rgba(254, 254, 254, 0.9), rgba(254, 254, 254, 0.9));
+      }
+      &:after {
+        background-image: linear-gradient(to right, rgba(254, 254, 254, 0.9), rgba(254, 254, 254, 0.9));
+      }
+    }
+  }
+}

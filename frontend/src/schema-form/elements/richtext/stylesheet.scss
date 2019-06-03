@@ -1,0 +1,23 @@
+@import "../../../configs/css-configuration.scss";
+
+.rdw-embedded-modal {
+  height: auto !important;
+}
+
+.rdw-embedded-modal-btn-section {
+  line-height: 1.5 !important;
+}
+
+.ui-richtext {
+  border: 1px solid #F1F1F1;
+  min-height: 200px;
+  padding: 20px;
+
+  .public-DraftStyleDefault-block {
+    margin: 0;
+  }
+
+  div.ant-form-item-control {
+    line-height: 1.5 !important;
+  }
+}

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  .ui-contactus-page {
+    .text-panel {
+      position: relative;
+
+      h1 {
+        position: absolute;
+        bottom: 50px;
+        font-size: 30px !important;
+        margin-left: 20px !important;
+      }
+    }
+  }
+}
+.ui-contactus-page {
+
+  .contact-img {
+    &:before {
+      opacity: 0.2 !important;
+    }
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: 300;
+    span {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+}

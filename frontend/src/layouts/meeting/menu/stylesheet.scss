@@ -1,0 +1,10 @@
+.ui-meeting-menu {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  padding: 10px;
+  .ui-meeting-menu-content {
+    box-shadow: 0 0.25em 0.5em hsla(0,0%,0%,10%);
+    background: #ffffff;
+  }
+}

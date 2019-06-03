@@ -1,0 +1,83 @@
+@media only screen and (max-width: 600px) {
+  .ui-about-us {
+    .text-panel {
+      position: relative;
+      h1{
+        position: absolute;
+        bottom: 50px;
+        font-size: 30px !important;
+        margin-left: 20px !important;
+      }
+    }
+
+  }
+  .ui-news-content {
+    padding: 40px 20px !important;
+
+    h2 {
+      display: none !important;
+    }
+  }
+}
+.ui-about-us {
+  h1, h2 {
+    text-align: left;
+    font-weight: 300;
+    padding: 50px 0 0 0;
+    font-size: 50px;
+  }
+
+  h2 {
+    text-align: center !important;
+  }
+
+  .ui-news-content {
+    padding: 0px 20px;
+  }
+
+  .desc {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+
+
+    &.last {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .ui-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+
+    img {
+      text-align: center;
+      margin: 20px auto 50px auto;
+      max-width: 800px;
+    }
+
+    ul.outline {
+      list-style: none;
+
+      li {
+        display: block;
+        position: relative;
+
+        i {
+          position: absolute;
+          top: 5px;
+          left: -22px;
+        }
+
+        p {
+          display: inline-block;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+}

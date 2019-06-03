@@ -1,0 +1,15 @@
+@import "../../../../configs/css-configuration.scss";
+
+.center-viewer-panel {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+
+  &.on-hover {
+    cursor: pointer;
+  }
+  &.on-hover:hover {
+    //background-color: $menu-bg-color;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<link type="image/x-icon" href="/favicon.png" rel="icon">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+      window.onkeydown = function(e) {
+        if(e.target.type === 'div' ) {
+          return !(e.keyCode == 32);
+        }
+      };
+
+      var initCollectionInFirstTime = true;
+
+      // transfers sessionStorage from one tab to another
+      var sessionStorage_transfer = function(event) {
+        if(!event) { event = window.event; } // ie suq
+        if(!event.newValue) return;          // do nothing if no value to work with
+        console.log("event.key", event.key);
+        if (event.key == 'getSessionStorage') {
+          // another tab asked for the sessionStorage -> send it
+          localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
+          // the other tab should now have it, so we're done with it.
+          localStorage.removeItem('sessionStorage'); // <- could do short timeout as well.
+        } else if (event.key == 'sessionStorage') {
+          // another tab sent data <- get it
+          var data = JSON.parse(event.newValue);
+          for (var key in data) {
+            sessionStorage.setItem(key, data[key]);
+          }
+        } else if(event.key == 'doLogout'){
+            sessionStorage.removeItem('user');
+            window.location.href = '/login';
+        } else if(event.key == 'doLogin'){
+            window.location.href = '/';
+        }
+      };
+
+      // listen for changes to localStorage
+      if(window.addEventListener) {
+        window.addEventListener("storage", sessionStorage_transfer, false);
+      } else {
+        window.attachEvent("onstorage", sessionStorage_transfer);
+      };
+      // do refresh sessionStorage from other tab
+      localStorage.setItem('getSessionStorage','do refresh sessionStorage from other tab');
+      localStorage.removeItem('getSessionStorage');
+
+
+    </script>
+
+    <script src="/nprogress/nprogress.js" type="text/javascript"></script>
+    <!--<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en"></script>-->
+    <link rel='stylesheet' href='/nprogress/nprogress.css'></link>
+</head>
+<body>
+
+<div id='root'>
+    <div style="text-align: center">
+        <img style="margin: 100px auto;width: 40px" width="40" height="auto" src="/media/images/svg-loaders/grid.svg">
+        <style>
+            body {
+                background-color: #ffffff;
+            }
+        </style>
+    </div>
+</div>
+
+</body>
+</html>

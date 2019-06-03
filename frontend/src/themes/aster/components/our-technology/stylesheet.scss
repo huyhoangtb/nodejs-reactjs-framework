@@ -1,0 +1,236 @@
+@media only screen and (max-width: 600px) {
+  .ui-aster-technology {
+    .ui-tech-content {
+      .sub_mobile {
+        border-left: none !important;
+      }
+
+      .ptech-item {
+        margin: 0 10px !important;
+      }
+    }
+
+    .ui-title-panel {
+
+      h3 {
+        padding: 48px 0 10px 0 !important;
+      }
+    }
+  }
+}
+
+.ui-aster-technology {
+
+  .ui-title-panel {
+
+    h3 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 64px 0 10px 0;
+      font-size: 50px;
+      color: #e29d00;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .ui-tech-content {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+
+    .tech-item-panel {
+      margin: 10px auto;
+      display: flex;
+
+      > div {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .ptech-item {
+        margin-right: 20px;
+        display: inline-block;
+
+        .sub_mobile {
+          border-left: 1px dotted #cccccc;
+          padding-left: 20px;
+        }
+
+        .name {
+          display: inline-block;
+          text-align: center;
+          padding: 10px 0;
+          width: 100%;
+          font-weight: 500;
+          font-size: 18px;
+
+          &.reactjs {
+            color: #00d8ff;
+          }
+
+          &.sass {
+            color: #cf649a;
+          }
+
+          &.vuejs2 {
+            color: #41b883;
+          }
+
+          &.less {
+            color: #563e7d;
+          }
+
+          &.angular2 {
+            color: #b52e31;
+          }
+
+          &.mobile {
+            color: #e29d00;
+          }
+
+          &.nodejs {
+            color: #37474f;
+          }
+
+          &.java {
+            color: #73a1fb;
+          }
+
+          &.php {
+            color: #008cdb;
+          }
+
+          &.mongodb {
+            color: #4dae50;
+          }
+
+          &.mysql {
+            color: #01628a;
+          }
+
+          &.oracle {
+            color: #ff0000;
+          }
+
+          &.db2 {
+            color: #26953a;
+          }
+
+          &.redis {
+            color: #d82f27;
+          }
+        }
+
+        //&:last-child {
+        //  border-left: 1px dotted #cccccc;
+        //  padding-left: 20px;
+        //
+        //}
+      }
+
+      .tech-item {
+        overflow: hidden;
+        display: flex;
+        left: 50%;
+        align-content: center;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        border: 2px solid #0a66b7;
+
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+
+        img {
+          width: 70px;
+          height: auto;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &.reactjs {
+          border-color: #00d8ff;
+          transform: translateX(5px) translateY(6px);
+        }
+
+        &.sass {
+          border-color: #cf649a;
+        }
+
+        &.vuejs2 {
+          border-color: #41b883;
+
+          img {
+            width: 65px;
+            height: auto;
+          }
+        }
+
+        &.less {
+          border-color: #563e7d;
+        }
+
+        &.angular2 {
+          border-color: #b52e31;
+        }
+
+        &.nodejs {
+          border-color: #37474f;
+        }
+
+        &.java {
+          border-color: #73a1fb;
+        }
+
+        &.php {
+          border-color: #008cdb;
+        }
+
+        &.mongodb {
+          border-color: #4dae50;
+        }
+
+        &.mysql {
+          border-color: #01628a;
+        }
+
+        &.oracle {
+          border-color: #ff0000;
+        }
+
+        &.db2 {
+          border-color: #26953a;
+        }
+
+        &.redis {
+          border-color: #d82f27;
+        }
+
+        &.mobile {
+          border-color: #e29d00;
+
+          img {
+            width: 70px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .desc {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+}

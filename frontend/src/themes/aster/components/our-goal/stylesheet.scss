@@ -1,0 +1,106 @@
+@media only screen and (max-width: 600px) {
+  .ui-aster-goal {
+    .ui-aster-outer-panel {
+      .ui-aster-content-item {
+        width: 80% !important;
+      }
+    }
+  }
+  .team-slogan {
+    font-size: 29px !important;
+    transform: translateY(-251px) translateX(-16px) !important;
+    margin: 0 auto;
+  }
+}
+
+.ui-aster-goal {
+  .desc {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 18px;
+
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+
+  .ui-aster-outer-panel {
+    text-align: center;
+
+    .ui-aster-content {
+      display: inline-block;
+      margin: 0 auto;
+      position: relative;
+
+      .ui-aster-content-item {
+        display: inline-block;
+        text-align: right;
+        padding: 15px;
+
+        &.align-left {
+          text-align: left;
+
+        }
+
+        > div {
+          display: inline-block;
+          transform: skew(-20deg);
+          border: 1px solid #e29d00;
+          padding: 2px;
+
+          > div {
+            padding: 2px;
+            border: 1px solid #e29d00;
+            overflow: hidden;
+
+            img {
+              transform: skew(20deg);
+              width: 105%;
+              transform: translateX(-20px);
+              object-fit: cover;
+
+            }
+          }
+        }
+
+        width: 46%;
+      }
+    }
+  }
+
+  .team-slogan {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    font-size: 60px;
+    font-weight: 300;
+    color: #e29d00;
+    transform: translateY(-130px) translateX(-16px);
+
+    div {
+      display: inline-block;
+      transform: skew(-20deg);
+      border: 1px dotted #e29d00;
+      padding: 0px 24px 15px 24px;
+      background: #ffffff;
+      align-items: center;
+      line-height: 56px;
+    }
+  }
+
+  .ui-title-panel {
+
+    h3 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 64px 0 10px 0;
+      font-size: 50px;
+      color: #e29d00;
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+}

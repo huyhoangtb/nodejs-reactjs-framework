@@ -1,0 +1,201 @@
+@import "../../configs/css-configuration.scss";
+
+$body-bg-color: #ffffff;
+$dark-color: #1890ff;
+$desc-color: #9199a1;
+$white: #ffffff;
+$highline-color: #0366d6;
+$highline-color-small: #07C;
+$text-font-color: #535a60;
+$primary-color: #F48024;
+$border-color: #ddd;
+$theme-font-family: 'Open Sans', "intercom-font", "ui-header-adminHelvetica Neue", Helvetica, Arial, sans-serif;
+
+.flex-center {
+  display: flex;
+  align-self: center;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label {
+  padding-bottom: 2px !important;
+}
+
+.ant-form-horizontal {
+  .ant-form-item-label {
+    line-height: 20px;
+  }
+
+  .ant-form-item {
+    margin-bottom: 20px;
+  }
+}
+
+.ant-divider-with-text-left::before {
+  width: 0% !important;
+}
+
+.ui-admin-layout {
+
+
+  .header-collapsed-icon {
+    padding: 0 10px 0 0px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  //.ui-admin-left-menu-panel.ant-layout-sider, .ui-admin-left-menu-panel .ui-admin-left-menu,
+  //.ui-admin-left-menu-panel .ant-menu-sub.ant-menu-inline > .ant-menu-item, .ui-admin-left-menu-panel .ant-menu-sub.ant-menu-inline {
+  //  background: #f4f8fb;
+  //  color: #000000;
+  //}
+  //
+  //.ant-menu-item-selected {
+  //  background: #e6fbff!important;
+  //}
+
+  .ui-header-admin {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+    .ui-select-org {
+      .ant-select-selection {
+        border: none !important;
+        background: $dark-color !important;
+        color: white;
+      }
+
+    }
+  }
+
+  .ant-layout-header {
+    background: $dark-color;
+
+    .ant-menu-dark.ant-menu-horizontal {
+      border-bottom-color: $dark-color !important;
+    }
+
+    .ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+      //color: rgba(255, 255, 255, 0.65);
+      background: $dark-color !important;
+    }
+  }
+
+  .ant-layout-content {
+    margin-top: 0 !important;
+    //padding-top: 0 !important;
+  }
+
+  .ui-custom-top-menu {
+    line-height: 50px !important;
+    height: 50px !important;
+    padding: 0;
+  }
+
+  font-size: 13px;
+  background-color: #c2ccd1;
+
+  .ant-layout-header {
+    display: flex;
+    height: 45px;
+    padding: 0 10px;
+
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .ui-header-menu {
+
+    }
+
+    .setting-top-header {
+      line-height: 16px;
+      display: flex;
+      align-self: center;
+      padding: 0 10px;
+
+      .top-administrator {
+        color: #111111;
+        opacity: 0.8;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ant-menu-item, .ant-menu-submenu-title {
+    padding: 0 10px;
+    color: #000;
+  }
+
+  .ant-layout-header .ant-menu {
+    line-height: 45px !important;
+  }
+
+  .admin-logo-panel {
+    padding: 2px 20px 2px 10px;
+    width: 240px;
+
+    img {
+      vertical-align: inherit;
+      border-style: none;
+      filter: brightness(0) invert(1);
+      max-height: 39px;
+      max-width: 200px;
+    }
+  }
+
+  .content-header {
+    height: 50px;
+    background: $main-menu-color;
+    border-bottom: dotted 1px #cccccc;
+    display: flex;
+
+    .header-left {
+      display: flex;
+      align-self: center;
+      flex-grow: 1;
+    }
+
+    .header-right {
+      padding-right: 10px;
+      display: flex;
+      align-self: center;
+    }
+  }
+
+  .content-box {
+    padding: 20px;
+    margin: 0;
+    background: $main-content-bg-color;
+
+    .ui-main-content-panel {
+      display: flex;
+
+      .ui-sub-menu {
+        //width: 200px;
+        //border-right: 1px solid #e8e8e8;
+        .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+          border: none;
+        }
+      }
+
+      .content-box-panel {
+        min-height: 650px;
+        position: relative;
+        //border-top-left-radius: 4px;
+        //box-shadow: 5px 0px 7px -5px #c1c1c1 inset, 0px 7px 5px -7px #c1c1c1 inset;
+        //box-shadow: 0px 7px 5px -7px #c1c1c1 inset;
+        //background: #ffffff;
+        //padding: 10px;
+        border-radius: 5px;
+        flex-grow: 1;
+
+      }
+    }
+
+  }
+}

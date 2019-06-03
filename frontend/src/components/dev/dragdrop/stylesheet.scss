@@ -1,0 +1,22 @@
+.ui-drag-drop-root {
+  //border: 1px solid #cccccc;
+  .ui-draggable-wrapper {
+    position: relative;
+    padding: 8px;
+    //margin: 8px;
+  }
+
+  .ui-drop-panel {
+    margin-bottom: 20px;
+  }
+
+  .editing {
+    border: 0px solid #ffffff;
+    background-color: #ffffff;
+  }
+
+  .ui-editable-comp {
+    padding: 5px;
+    display: inline-block;
+  }
+}

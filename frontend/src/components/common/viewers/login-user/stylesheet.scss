@@ -1,0 +1,27 @@
+.ui-user-avatar {
+  display: flex;
+  cursor: pointer;
+  align-self: center;
+  line-height: 16px;
+  .avatar {
+    margin-right: 10px;
+  }
+
+  .info {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    > div {
+      line-height: 16px;
+      &.display-name {
+        font-weight: 600;
+        color: #ffffff;
+      }
+      &.role-name {
+        font-size: 12px;
+        opacity: 0.5;
+        color: #ffffff;
+      }
+    }
+  }
+}
