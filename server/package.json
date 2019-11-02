@@ -83,7 +83,7 @@
     "redis": "^2.8.0",
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "^0.7.7",
-    "sequelize": "^4.43.2",
+    "sequelize": "^5.15.1",
     "socket-controllers": "0.0.3",
     "socket.io": "^2.2.0",
     "speakeasy": "^2.0.0",
