@@ -80,7 +80,7 @@
     "scriptjs": "^2.5.9",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.8",
-    "validator": "^7.2.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "build-css": "node-sass src/ -o src/",
