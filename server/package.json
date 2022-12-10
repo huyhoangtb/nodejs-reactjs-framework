@@ -56,7 +56,7 @@
     "ejs": "^2.5.7",
     "email-templates": "^3.6.1",
     "es6-shim": "^0.35.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-fileupload": "^0.3.0",
     "express-http-context": "^1.2.2",
     "express-oauth-server": "^2.0.0",
